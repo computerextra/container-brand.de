@@ -1,34 +1,28 @@
-import { useState } from 'react'
-import reactLogo from './assets/react.svg'
-import viteLogo from '/vite.svg'
-import './App.css'
+import { Container, Image } from "react-bootstrap"
 
 function App() {
-  const [count, setCount] = useState(0)
 
   return (
-    <>
-      <div>
-        <a href="https://vitejs.dev" target="_blank">
-          <img src={viteLogo} className="logo" alt="Vite logo" />
-        </a>
-        <a href="https://react.dev" target="_blank">
-          <img src={reactLogo} className="logo react" alt="React logo" />
-        </a>
-      </div>
-      <h1>Vite + React</h1>
-      <div className="card">
-        <button onClick={() => setCount((count) => count + 1)}>
-          count is {count}
-        </button>
-        <p>
-          Edit <code>src/App.tsx</code> and save to test HMR
-        </p>
-      </div>
-      <p className="read-the-docs">
-        Click on the Vite and React logos to learn more
+    <Container fluid="sm" className="text-center mt-5">
+      <Image fluid src="/logo.png" alt="Firmenlogo der Firma Brand GmbH" style={{ maxWidth: "100%" }} />
+      <h1>Vielen Dank für Ihren Besuch.</h1>
+      <p className="fs-3">Hier entsteht in kürze eine neue Internetpräsenz.</ p>
+      <h2>Impressum</h2>
+      <p>
+        Brand GmbH <br />
+        Geschäftsleitung: Nicole Brand <br />
+        Im Siegen 1 <br />
+        34292 Ahnatal <br />
+        Telefon: 05609 - 8078 - 60 <br />
+        Fax: 05609 - 80786 - 29 <br />
+        E-Mail: info[AT]container-brand[PUNKT]de
       </p>
-    </>
+      <p>
+        Unsere Geschäftzeiten sind: <br />
+        Montags - Freitags von 07:00 Uhr - 17:00 Uhr <br />
+        UStIdent.Nr.: DE 20 49 71 77 0
+      </p>
+    </Container >
   )
 }
 
